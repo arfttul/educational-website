@@ -1,17 +1,17 @@
+import { faL } from "@fortawesome/free-solid-svg-icons";
 import { Menu } from "@headlessui/react";
 import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 function MyDropdown(props) {
   const [showoptions, setShowoptions] = useState(false);
-  console.log( 'props-childeren:', props.children);
-  const handleShowOptions = () => {
-    setShowoptions(!showoptions);
-  };
+  console.log("props-childeren:", props.children);
+
   return (
     <div class="relative inline-block  text-left ">
       <div class="">
         <button
-          onClick={handleShowOptions}
+          onMouseEnter={() => setShowoptions(true)}
+          onMouseLeave={() => setShowoptions(false)}
           type="button"
           class="inline-flex justify-center w-full rounded-md items-center hover:bg-black hover:text-white p-6   "
           id="menu-button"
@@ -36,7 +36,6 @@ function MyDropdown(props) {
       </div>
 
       {showoptions && props.children[1]}
-      
     </div>
   );
 }

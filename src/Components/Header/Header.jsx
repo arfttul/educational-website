@@ -23,7 +23,7 @@ const Header = () => {
           tabindex="-1"
           id="menu-item-0"
         >
-          Account settings
+          Web Development
         </Link>
         <Link
           to="Courses"
@@ -32,7 +32,7 @@ const Header = () => {
           tabindex="-1"
           id="menu-item-1"
         >
-          Support
+          Academic Courses
         </Link>
         <Link
           to="/Courses"
@@ -41,7 +41,7 @@ const Header = () => {
           tabindex="-1"
           id="menu-item-2"
         >
-          License
+          App Development
         </Link>
         <Outlet />
       </div>
@@ -86,11 +86,11 @@ const Header = () => {
         </div>
         <div className=" flex justify-around items-center   w-1/2 text-2xl mt-16">
           <MyDropdown>
-            {courses}
+            <h2>Courses</h2>
             {courseLinks}
           </MyDropdown>
           <MyDropdown>
-            {support}
+            <h2>Support</h2>
             {supportLinks}
           </MyDropdown>
           <div className="svg-container flex border px-6 py-1">
