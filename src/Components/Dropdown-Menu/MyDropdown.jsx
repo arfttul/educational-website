@@ -3,20 +3,18 @@ import { Menu } from "@headlessui/react";
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 function MyDropdown(props) {
-  const [showoptions, setShowoptions] = useState(false);
-  console.log("props-childeren:", props.children);
+  const [showOptions, setShowOptions] = useState(false);
 
   return (
     <div class="relative inline-block  text-left ">
       <div class="">
         <button
-          onMouseEnter={() => setShowoptions(true)}
-          onMouseLeave={() => setShowoptions(false)}
           type="button"
           class="inline-flex justify-center w-full rounded-md items-center hover:bg-black hover:text-white p-6   "
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
+          onClick={() => setShowOptions(!showOptions)}
         >
           {props.children[0]}
           <svg
@@ -35,7 +33,7 @@ function MyDropdown(props) {
         </button>
       </div>
 
-      {showoptions && props.children[1]}
+      {showOptions && props.children[1]}
     </div>
   );
 }
