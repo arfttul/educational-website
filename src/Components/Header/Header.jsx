@@ -1,12 +1,12 @@
 import { Menu } from "@headlessui/react";
 import { React, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import MyDropdown from "../Dropdown-Menu/MyDropdown";
 import svg from "../../Images/SVGs/magnifying-glass-svgrepo-com.svg";
 import Logo from "../Logo/Logo";
 
 const Header = () => {
- 
+  const navigate = useNavigate();
   const courses = "Courses";
   const support = "Support";
 
@@ -17,11 +17,10 @@ const Header = () => {
       aria-orientation="vertical"
       aria-labelledby="menu-button"
       tabindex="-1"
-      
     >
       <div class="py-1 flex flex-col items-center justify-center " role="none">
         <Link
-          to="Courses"
+          to="web-development"
           class="text-gray-700 block px-4 py-2 md:text-white text-sm hover:bg-gray-300"
           role="menuitem"
           tabindex="-1"
@@ -30,7 +29,7 @@ const Header = () => {
           Web Development
         </Link>
         <Link
-          to="Courses"
+          to="academic-courses"
           class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 md:text-white"
           role="menuitem"
           tabindex="-1"
@@ -39,7 +38,7 @@ const Header = () => {
           Academic Courses
         </Link>
         <Link
-          to="/Courses"
+          to="app-development"
           class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 md:text-white"
           role="menuitem"
           tabindex="-1"
@@ -58,11 +57,10 @@ const Header = () => {
       aria-orientation="vertical"
       aria-labelledby="menu-button"
       tabindex="-1"
-      
     >
       <div class="py-1 flex flex-col items-center justify-center " role="none">
         <Link
-          to="Coffee"
+          to="support"
           class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 md:text-white"
           role="menuitem"
           tabindex="-1"

@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Banner from "../Banner/Banner";
+import webCourses from "../../Data/web-dev-courses";
 
 const BuyCoffee = () => {
   const coffee = <FontAwesomeIcon icon={faCoffee} />;
   return (
     <div>
-      <Banner> Support Banner</Banner>
+      
       <div className="flex justify-center items-center h-32 bg-slate-800">
         <h1 className="text-6xl text-yellow-50">Buy Me A Coffee</h1>
       </div>

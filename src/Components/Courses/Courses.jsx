@@ -1,15 +1,11 @@
-import React from "react";
-import webCourses from "../../Data/web-dev-courses";
+import React, { useEffect, useState } from "react";
+
 import Banner from "../Banner/Banner";
 
 const Courses = () => {
   return (
     <div>
-      <Banner>
-        {webCourses.map((course) => (
-          <div> {course} </div>
-        ))}
-      </Banner>
+      <Banner>courses</Banner>
     </div>
   );
 };
