@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 const Logo = () => {
   return (
     <div className="logo ">
-      <Link to="home">
+      <Link to="/">
         <h2 className="text-4xl m-4   cursor-pointer">
           <span className="text-6xl ">
             <h6 className="rotate-12 inline-block">e</h6>

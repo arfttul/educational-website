@@ -6,7 +6,7 @@ import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 const WebDev = (props) => {
   return (
-    <div>
+    <div className={props.margin}>
       <Banner>
         {webCourses.map((course) => (
           <div className="border flex flex-col items-center">

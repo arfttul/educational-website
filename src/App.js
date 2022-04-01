@@ -14,18 +14,20 @@ import Home from "./Components/Home/Home";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="flex flex-col min-h-screen ">
       <Header />
-      <Routes>
-        
-        <Route path="home" elememnt={<Home/>}></Route>
-        <Route path="web-development" element={<WebDev />} />
-        <Route path="academic-courses" element={<Academic />} />
-        <Route path="app-development" element={<AppDev />} />
-        <Route path="support" element={<BuyCoffee />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
-      <Banner />
+      <div className="grow">
+        <Routes>
+          <Route path="home" elememnt={<Navigate to="/" />} />
+          <Route path="/" element={<Home />} />
+          <Route path="web-development" element={<WebDev />} />
+          <Route path="academic-courses" element={<Academic />} />
+          <Route path="app-development" element={<AppDev />} />
+          <Route path="support" element={<BuyCoffee />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </div>
+
       <Footer />
     </div>
   );

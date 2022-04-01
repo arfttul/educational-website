@@ -11,7 +11,7 @@ import { Link, Navigate } from "react-router-dom";
 
 const Footer = (props) => {
   return (
-    <div className="bg-gray-700 text-yellow-50 fixed inset-x-0 bottom-0 py-12 px-72 h-80">
+    <div className="bg-gray-700 text-yellow-50  inset-x-0 bottom-0 py-8 px-72 ">
       <div className="logo-social flex justify-between items-center">
         <div className="footer-logo">
           <Logo />
