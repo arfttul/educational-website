@@ -16,6 +16,7 @@ const Footer = (props) => {
         <div className="footer-logo">
           <Logo />
         </div>
+        <small className="text-2xl">&copy; https://github.com/arfttul </small>
         <div className="social-medial-link">
           <a href="https://www.facebook.com/" target="_blank">
             <FontAwesomeIcon

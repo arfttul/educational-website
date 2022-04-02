@@ -24,7 +24,7 @@ const webCourses = [
     fees: "20000 tk",
   },
   {
-    name: "Angular Beginer",
+    name: "TypeScript Beginer",
     img: "https://res.cloudinary.com/practicaldev/image/fetch/s---geKH-gk--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2rzr9vdyfmu2pnwqigyo.jpg",
     time: "3 Months",
     fees: "4000 tk",

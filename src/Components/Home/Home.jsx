@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Academic from "../Courses/Academic";
 import AppDev from "../Courses/AppDev";
+import EthicalHacking from "../Courses/EthicalHacking";
 import WebDev from "../Courses/WebDev";
 
 const Home = (props) => {
@@ -16,6 +17,8 @@ const Home = (props) => {
       <AppDev margin={"mb-10 mt-4"} />
       <center className="text-4xl mt-4"> University Academic Courses</center>
       <Academic margin={"mb-10 mt-4"} />
+      <center className="text-4xl mt-4">Ethical Hacking </center>
+      <EthicalHacking margin={"mb-10 mt-4"} />
     </div>
   );
 };

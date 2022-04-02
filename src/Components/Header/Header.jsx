@@ -21,7 +21,7 @@ const Header = () => {
       <div class="py-1 flex flex-col items-center justify-center " role="none">
         <Link
           to="web-development"
-          class="text-gray-700 block px-4 py-2 md:text-white text-sm hover:bg-gray-300"
+          class="text-gray-700 block px-4 py-2 md:text-white text-sm hover:font-extrabold"
           role="menuitem"
           tabindex="-1"
           id="menu-item-0"
@@ -30,7 +30,7 @@ const Header = () => {
         </Link>
         <Link
           to="academic-courses"
-          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 md:text-white"
+          class="text-gray-700 block px-4 py-2 text-sm hover:font-extrabold md:text-white"
           role="menuitem"
           tabindex="-1"
           id="menu-item-1"
@@ -39,13 +39,23 @@ const Header = () => {
         </Link>
         <Link
           to="app-development"
-          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 md:text-white"
+          class="text-gray-700 block px-4 py-2 text-sm hover:font-extrabold md:text-white"
           role="menuitem"
           tabindex="-1"
           id="menu-item-2"
         >
           App Development
         </Link>
+        <Link
+          to="ethical-hacking"
+          class="text-gray-700 block px-4 py-2 text-sm hover:font-extrabold md:text-white"
+          role="menuitem"
+          tabindex="-1"
+          id="menu-item-2"
+        >
+          Ethical Hacking
+        </Link>
+
         <Outlet />
       </div>
     </div>
@@ -61,7 +71,7 @@ const Header = () => {
       <div class="py-1 flex flex-col items-center justify-center " role="none">
         <Link
           to="support"
-          class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-300 md:text-white"
+          class="text-gray-700 block px-4 py-2 text-sm hover:font-extrabold md:text-white "
           role="menuitem"
           tabindex="-1"
           id="menu-item-2"
@@ -73,11 +83,13 @@ const Header = () => {
     </div>
   );
 
+  const signIn = <div>signIn</div>;
+
   return (
     <div className="">
-      <nav className="flex   justify-between   items-center ">
+      <nav className="flex   justify-between   items-center mb-6">
         <Logo />
-        <div className=" flex justify-around items-center   w-1/2 text-2xl mt-16">
+        <div className=" flex justify-around items-center  w-3/4  text-2xl mt-16">
           <MyDropdown>
             <h2>Courses</h2>
             {courseLinks}
@@ -86,6 +98,17 @@ const Header = () => {
             <h2>Support</h2>
             {supportLinks}
           </MyDropdown>
+
+          <button
+            type="button"
+            class="inline-flex justify-center  rounded-full hover:font-extrabold items-center hover:bg-red-500 hover:text-white px-12 py-4   "
+            id="menu-button"
+            aria-expanded="true"
+            aria-haspopup="true"
+          >
+            <Link to="login"> Log In</Link>
+          </button>
+
           <div className="svg-container flex border px-6 py-1">
             <input
               type="text"

@@ -9,7 +9,6 @@ const BuyCoffee = () => {
   const coffee = <FontAwesomeIcon icon={faCoffee} />;
   return (
     <div>
-      
       <div className="flex justify-center items-center h-32 bg-slate-800">
         <h1 className="text-6xl text-yellow-50">Buy Me A Coffee</h1>
       </div>
@@ -22,15 +21,14 @@ const BuyCoffee = () => {
             {coffee}
           </h1>
         </a>
-
-        <button
-          className="border border-amber-800 mt-8 px-8 py-4
+        <a href="https://www.buymeacoffee.com/arfttul" target="_blank">
+          <button
+            className="border border-amber-800 mt-8 px-8 py-4 rounded-full
         font-bold text-amber-700 hover:bg-amber-800 hover:text-white"
-        >
-          <a href="https://www.buymeacoffee.com/arfttul" target="_blank">
-            Buy Me{" "}
-          </a>
-        </button>
+          >
+            Buy Me A <FontAwesomeIcon icon={faCoffee} />
+          </button>
+        </a>
       </div>
     </div>
   );
