@@ -1,9 +1,8 @@
-
 # Educational Website
-This Website is basically created as an assignment for  programming-hero 
-batch-4 assignment-9. The base Website of this webapp is  [www.edx.org](https://www.edx.org/)
 
-
+This Website is basically created as an assignment for programming-hero
+batch-4 assignment-9. The base Website of this webapp is [www.edx.org](https://www.edx.org/).
+netlify live link : [click me](https://lucent-cat-bdfe3f.netlify.app/)
 
 ## Topic Covered
 
@@ -11,7 +10,7 @@ batch-4 assignment-9. The base Website of this webapp is  [www.edx.org](https://
 - jsx
 - fontawesome library
 
-- React Router v6 
+- React Router v6
 
 - Hooks / Custom Hooks
 
@@ -19,15 +18,13 @@ batch-4 assignment-9. The base Website of this webapp is  [www.edx.org](https://
 
 - Context API
 
-- Props Drilling 
+- Props Drilling
 
 - React Search Filter
 
 ## CSS Framework
 
 Tailwindcss v3 used in this project.
-
-
 
 ## Run Locally
 
@@ -53,12 +50,10 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run start 
+  npm run start
   yarn start
 ```
 
-
 ## Support
 
-For support, email marafatbs@gmail.com 
-
+For support, email marafatbs@gmail.com
